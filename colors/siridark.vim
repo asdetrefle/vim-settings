@@ -28,10 +28,12 @@ let s:violet      = { "gui": "#d787ff", "cterm": "177" }
 let s:cyan        = { "gui": "#56b6c2", "cterm": "73"  }
 let s:white       = { "gui": "#dcdfe4", "cterm": "188" }
 let s:bluegrey    = { "gui": "#abb2bf", "cterm": "249" }
+let s:bluegrey1   = { "gui": "#848b98", "cterm": "245" }
 let s:bluegrey2   = { "gui": "#5c6370", "cterm": "241" }
 let s:salmon      = { "gui": "#d19a66", "cterm": "173" }
 
 " Additional cterm 256 colours
+let s:yellow2     = { "gui": "#ffff00", "cterm": "11"  }
 let s:salmon2     = { "gui": "#d7875f", "cterm": "173" }
 let s:orange      = { "gui": "#ff875f", "cterm": "209" }
 let s:aqua        = { "gui": "#66cccc", "cterm": "44"  }
@@ -124,7 +126,7 @@ call s:h("Folded", s:fg, "", "")
 call s:h("FoldColumn", s:fg, "", "")
 call s:h("SignColumn", s:fg, "", "")
 
-call s:h("MatchParen", s:blue, "", "underline")
+call s:h("MatchParen", s:yellow2, s:bluegrey2, "bold")
 call s:h("SpecialKey", s:fg, "", "")
 call s:h("Title", s:green, "", "")
 call s:h("WildMenu", s:fg, "", "")
@@ -166,7 +168,7 @@ call s:h("Special", s:blue, "", "")
 call s:h("SpecialChar", s:fg, "", "")
 call s:h("Tag", s:fg, "", "")
 call s:h("Delimiter", s:fg, "", "")
-call s:h("SpecialComment", s:fg, "", "")
+call s:h("SpecialComment", s:bluegrey1, "", "")
 call s:h("Debug", s:fg, "", "")
 call s:h("Underlined", s:fg, "", "")
 call s:h("Ignore", s:fg, "", "")
