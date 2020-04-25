@@ -17,15 +17,15 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'nightsense/forgotten'
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
-Plugin 'python-mode/python-mode'
+Plugin 'python-mode/python-mode', { 'branch': 'develop' }
 Plugin 'sjl/tslime.vim'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'vim-scripts/scilab.vim'
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'ervandew/supertab'
-Plugin 'Rip-Rip/clang_complete'
-" Bundle 'Valloric/YouCompleteMe'
+" Plugin 'Rip-Rip/clang_complete'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'Shougo/neocomplete.vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
@@ -387,16 +387,16 @@ let g:neocomplcache_enable_at_startup = 1
 """"""""""""""""""""""""""""""
 " clang_complete
 """"""""""""""""""""""""""""""
-let g:clang_complete_copen = 1
-let g:clang_snippets = 1
-let g:clang_snippets_engine = 'clang_complete'
-let g:clang_trailing_placeholder = 1
-let g:clang_user_options = '-std=c++11'
-let g:clang_periodic_quickfix = 0
-let g:clang_close_preview = 1
-if has('mac')
-    let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-endif
+"let g:clang_complete_copen = 1
+"let g:clang_snippets = 1
+"let g:clang_snippets_engine = 'clang_complete'
+"let g:clang_trailing_placeholder = 1
+"let g:clang_user_options = '-std=c++11'
+"let g:clang_periodic_quickfix = 0
+"let g:clang_close_preview = 1
+"if has('mac')
+""    let g:clang_library_path = '/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
+"endif
 
 """"""""""""""""""""""""""""""
 " NeoSnippet
