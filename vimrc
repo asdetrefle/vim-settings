@@ -14,29 +14,16 @@ Plugin 'VundleVim/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
-Plugin 'nightsense/forgotten'
-Plugin 'rust-lang/rust.vim'
-Plugin 'racer-rust/vim-racer'
-Plugin 'python-mode/python-mode', { 'branch': 'develop' }
 Plugin 'sjl/tslime.vim'
 Plugin 'christoomey/vim-tmux-navigator'
-Plugin 'vim-scripts/scilab.vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
 Plugin 'ervandew/supertab'
-" Plugin 'Rip-Rip/clang_complete'
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'Shougo/neocomplete.vim'
+Plugin 'codota/tabnine-vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'Shougo/vimshell.vim'
-" Bundle 'davidhalter/jedi-vim'
-Plugin 'jelera/vim-javascript-syntax'
-Plugin 'plasticboy/vim-markdown'
 Plugin 'mattn/emmet-vim'
-Plugin 'othree/html5.vim'
 Plugin 'xolox/vim-misc'
 Plugin 'Raimondi/delimitMate'
+
 " vim-scripts repos
 Plugin 'The-NERD-Commenter'
 Plugin 'The-NERD-tree'
@@ -48,16 +35,32 @@ Plugin 'luainspect.vim'
 Plugin 'matchit.zip'
 Plugin 'Tabular'
 
+" Deprecated
+" Plugin 'tomtom/tlib_vim'
+" Plugin 'Rip-Rip/clang_complete'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Shougo/neocomplete.vim'
+
+" Language Specific - Comment if not needed
+Plugin 'rust-lang/rust.vim'
+Plugin 'racer-rust/vim-racer'
+" Plugin 'davidhalter/jedi-vim'             " Python autocompletion
+" Plugin 'vim-scripts/scilab.vim'
+Plugin 'othree/html5.vim'
+Plugin 'Shougo/vimshell.vim'
+Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'plasticboy/vim-markdown'
+
 " Below are vim color themes
 Plugin 'Solarized'
 Plugin 'Distinguished'
 Plugin 'chriskempson/vim-tomorrow-theme'
+Plugin 'joshdick/onedark.vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'jordwalke/flatlandia'
 Plugin 'nightsense/stellarized'
-Plugin 'nightsense/snow'
 Plugin 'nightsense/seagrey'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'bluz71/vim-moonfly-colors'
@@ -187,16 +190,11 @@ if has("gui_running")
     endif
 else
     if os=='mac'
-        "colorscheme Tomorrow-Night-Eighties
-        colorscheme stellarized
+        "colorscheme stellarized
+        "colorscheme siridark
+        colorscheme Tomorrow-Night-Eighties
     else
         set t_Co=256
-        "colorscheme Tomorrow-Night-Eighties
-        "colorscheme stellarized
-        "colorscheme snow
-        "colorscheme codedark
-        "colorscheme moonfly
-        "colorscheme spring-night
         colorscheme siridark 
     endif
 endif
