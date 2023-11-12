@@ -14,10 +14,11 @@ Plugin 'VundleVim/Vundle.vim'
 " My Bundles here:
 "
 " original repos on github
-Plugin 'sjl/tslime.vim'
-Plugin 'christoomey/vim-tmux-navigator'
+" Plugin 'sjl/tslime.vim'
+" Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ervandew/supertab'
-Plugin 'codota/tabnine-vim'
+Plugin 'tabnine/YouCompleteMe'
+" Plugin 'codota/tabnine-vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'mattn/emmet-vim'
@@ -44,28 +45,27 @@ Plugin 'Tabular'
 " Language Specific - Comment if not needed
 Plugin 'rust-lang/rust.vim'
 Plugin 'racer-rust/vim-racer'
-" Plugin 'davidhalter/jedi-vim'             " Python autocompletion
-" Plugin 'vim-scripts/scilab.vim'
 Plugin 'othree/html5.vim'
 Plugin 'Shougo/vimshell.vim'
 Plugin 'jelera/vim-javascript-syntax'
+" Plugin 'vim-scripts/scilab.vim'
 " Plugin 'plasticboy/vim-markdown'
 
 " Below are vim color themes
 Plugin 'Solarized'
 Plugin 'Distinguished'
 Plugin 'chriskempson/vim-tomorrow-theme'
-Plugin 'joshdick/onedark.vim'
 Plugin 'nanotech/jellybeans.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'jordwalke/flatlandia'
-Plugin 'nightsense/stellarized'
-Plugin 'nightsense/seagrey'
+Plugin 'joshdick/onedark.vim'
 Plugin 'tomasiser/vim-code-dark'
 Plugin 'bluz71/vim-moonfly-colors'
 Plugin 'rhysd/vim-color-spring-night'
 Plugin 'sonph/onehalf', {'rtp': 'vim/'}
+" Plugin 'nightsense/stellarized'
+" Plugin 'nightsense/seagrey'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
