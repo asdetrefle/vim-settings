@@ -17,7 +17,7 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugin 'sjl/tslime.vim'
 " Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ervandew/supertab'
-Plugin 'tabnine/YouCompleteMe'
+" Plugin 'tabnine/YouCompleteMe'
 " Plugin 'codota/tabnine-vim'
 Plugin 'Shougo/neosnippet.vim'
 Plugin 'Shougo/neosnippet-snippets'
@@ -94,6 +94,8 @@ set history=700
 filetype plugin on
 filetype indent on
 
+" Do not add a trailing eol to files
+set nofixeol
 " Set to auto read when a file is changed from the outside
 set autoread
 
